@@ -1,6 +1,12 @@
 import math
 
 
+def linear(x):
+    ''' linear activation function: https://en.wikipedia.org/wiki/Identity_function
+    '''
+    return x
+
+
 def sigmoid(x):
     '''Classical sigmoid activation function: https://en.wikipedia.org/wiki/Sigmoid_function
     '''
