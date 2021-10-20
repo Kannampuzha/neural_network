@@ -2,13 +2,21 @@ import math
 
 
 def linear(x):
-    ''' linear activation function: https://en.wikipedia.org/wiki/Identity_function
+    '''Linear activation function: https://en.wikipedia.org/wiki/Identity_function
     '''
     return x
 
 
+def tanh(x):
+    '''Hyperbolic tangent activation function: https://en.wikipedia.org/wiki/Hyperbolic_functions#Hyperbolic_tangent
+    This returns values between -1 and 1
+    '''
+    return math.tanh(x)
+
+
 def sigmoid(x):
     '''Classical sigmoid activation function: https://en.wikipedia.org/wiki/Sigmoid_function
+    This 
     '''
     return 1.0 / (1 + math.exp(-x))
 
