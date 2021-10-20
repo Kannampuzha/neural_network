@@ -29,3 +29,13 @@ def p_relu(x, p):
 def softplus(x):
     return math.log(1 + math.exp(x))
 
+#Binary step function : https://en.wikipedia.org/wiki/Step_function
+def Binary_step(x):
+    if x<0:
+        return 0
+    else:
+        return 1
+
+#Swish activation function :https://en.wikipedia.org/wiki/Swish_function
+def swish(x,b):
+    return x/(1+math.exp(-b*x))
