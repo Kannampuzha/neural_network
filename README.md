@@ -1,2 +1,2 @@
 # neural_network
-a neural neywork
+a neural network
