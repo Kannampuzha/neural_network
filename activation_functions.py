@@ -58,3 +58,16 @@ def Binary_step(x):
 #Swish activation function :https://en.wikipedia.org/wiki/Swish_function
 def swish(x,b):
     return x/(1+math.exp(-b*x))
+
+
+def elu(x, a):
+    '''Exponential linear units(ELU) activation function: https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#ELU'''
+    if x > 0:
+        return x
+    else:
+        return a * (math.exp(x) - 1)
+
+
+def silu(x):
+    '''Sigmoid Linear Unit(SiLU) activation function: https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#SiLU'''
+    return x * sigmoid(x)
