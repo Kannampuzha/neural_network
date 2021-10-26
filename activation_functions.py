@@ -71,3 +71,12 @@ def elu(x, a):
 def silu(x):
     '''Sigmoid Linear Unit(SiLU) activation function: https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#SiLU'''
     return x * sigmoid(x)
+
+
+def mish(x):
+    '''Mish Activation Function : https://arxiv.org/abs/1908.08681'''
+    return x * tanh(softplus(x))
+
+def bent_identity(x):
+    '''Bent-Identity Activation Function: https://www.gabormelli.com/RKB/Bent_Identity_Activation_Function'''
+  return (sqrt(((x**2)+1)-1)/2)+x
