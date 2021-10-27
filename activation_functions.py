@@ -34,7 +34,7 @@ def leaky_relu(x):
     return p_relu(x, 0.01)
 
 
-def p_relu(x, p):
+def p_relu(x, p=0.01):
     '''Parametric rectified linear unit: https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#Parametric_ReLU
     '''
     if x >= 0:
@@ -49,18 +49,18 @@ def softplus(x):
     return math.log(1 + math.exp(x))
 
 #Binary step function : https://en.wikipedia.org/wiki/Step_function
-def Binary_step(x):
+def binary_step(x):
     if x<0:
         return 0
     else:
         return 1
 
 #Swish activation function :https://en.wikipedia.org/wiki/Swish_function
-def swish(x,b):
+def swish(x,b=1.0):
     return x/(1+math.exp(-b*x))
 
 
-def elu(x, a):
+def elu(x, a=1.0):
     '''Exponential linear units(ELU) activation function: https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#ELU'''
     if x > 0:
         return x
@@ -79,4 +79,4 @@ def mish(x):
 
 def bent_identity(x):
     '''Bent-Identity Activation Function: https://www.gabormelli.com/RKB/Bent_Identity_Activation_Function'''
-  return (sqrt(((x**2)+1)-1)/2)+x
+    return (math.sqrt(((x**2)+1)-1)/2)+x
