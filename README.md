@@ -34,11 +34,11 @@ $ python create_function_plots.py
 
 A few visualizations of the plots of the activation functions are shown below:
 
-<img src="plots/sigmoid.png"/>
+<img src="plots/sigmoid.png" width='500px'/>
 
 <br>
 <br>
-<img src="plots/relu.png"/>
+<img src="plots/relu.png" width='500px'/>
 <br>
 <br>
-<img src="plots/binary_step.png">
+<img src="plots/binary_step.png" width='500px'>
