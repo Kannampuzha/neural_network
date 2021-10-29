@@ -22,6 +22,11 @@ The activation functions covered here are:
 - SiLU
 - Mish
 - Bent Identity
+- Gelu
+- Arctan
+- Le Cun's Tanh
+- Biplar Sigmoid
+- Logit
 
 This list is non exhaustive.
 
@@ -37,8 +42,6 @@ A few visualizations of the plots of the activation functions are shown below:
 <img src="plots/sigmoid.png" width='500px'/>
 
 <br>
-<br>
 <img src="plots/relu.png" width='500px'/>
-<br>
 <br>
 <img src="plots/binary_step.png" width='500px'>

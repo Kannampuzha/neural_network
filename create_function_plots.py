@@ -28,7 +28,7 @@ def create_dir(path):
     os.makedirs(path,exist_ok=True)
 
 def main():
-    acts = [ 'linear', 'tanh', 'sigmoid','relu', 'leaky_relu', 'p_relu', 'softplus', 'binary_step', 'swish', 'elu','silu', 'mish', 'bent_identity'] 
+    acts = [ 'linear', 'tanh', 'sigmoid','relu', 'leaky_relu', 'p_relu', 'softplus', 'binary_step', 'swish', 'elu','silu', 'mish', 'bent_identity','gelu','arctan','lecuns_tanh','bipolar_sigmoid','logit'] 
     path = 'plots'
     create_dir(path)
     x = np.linspace(-10, 10, 100) 
