@@ -3,6 +3,11 @@
 A neural network modelling requires an extensive use of activation functions and the correct activation function can help control and model the output of the problem statement.
 
 This repository has a wide collection of various acivation functions and their python implementations in the script  `activation_functions.py`.
+To install the requirements:
+
+```
+$ pip install -r requirements.txt
+```
 The activation functions covered here are:
 - Linear
 - Tanh
@@ -19,3 +24,21 @@ The activation functions covered here are:
 - Bent Identity
 
 This list is non exhaustive.
+
+This repository also contains a script called `create_function_plots.py` which creates plots for each and every activation function. The plots are saved in the `plots` directory in the <*activation*>.png format.
+
+```
+$ python create_function_plots.py
+
+```
+
+A few visualizations of the plots of the activation functions are shown below:
+
+<img src="plots/sigmoid.png" width='500px'/>
+
+<br>
+<br>
+<img src="plots/relu.png" width='500px'/>
+<br>
+<br>
+<img src="plots/binary_step.png" width='500px'>
