@@ -45,3 +45,9 @@ A few visualizations of the plots of the activation functions are shown below:
 <img src="plots/relu.png" width='500px'/>
 <br>
 <img src="plots/binary_step.png" width='500px'>
+
+Screenchot of output 
+
+Output displayed when the code is run on VScode 
+
+![sstejas](https://user-images.githubusercontent.com/83643171/196214451-ab8faff7-62dd-48b8-b5d4-24111d8e456d.png)
